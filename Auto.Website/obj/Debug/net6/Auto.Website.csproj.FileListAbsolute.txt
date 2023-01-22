@@ -277,3 +277,7 @@ C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Website\obj\Debug\net6\stati
 C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Website\obj\Debug\net6\scopedcss\bundle\Auto.Website.styles.css
 C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Website\obj\Debug\net6\Auto.Website.csproj.CopyComplete
 C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Website\obj\Debug\net6\Auto.Website.genruntimeconfig.cache
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Website\bin\Debug\net6\EasyNetQ.dll
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Website\bin\Debug\net6\RabbitMQ.Client.dll
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Website\bin\Debug\net6\Auto.Message.dll
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Website\bin\Debug\net6\Auto.Message.pdb

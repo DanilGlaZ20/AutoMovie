@@ -9,6 +9,8 @@
       "Auto.Website/1.0.0": {
         "dependencies": {
           "Auto.Data": "1.0.0",
+          "Auto.Message": "1.0.0",
+          "EasyNetQ": "6.0.1",
           "GraphQL": "4.6.1",
           "GraphQL.MicrosoftDI": "4.6.1",
           "GraphQL.Server.Transports.AspNetCore.SystemTextJson": "5.2.2",
@@ -42,6 +44,18 @@
           "lib/netstandard1.5/Castle.Core.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.4.1.0"
+          }
+        }
+      },
+      "EasyNetQ/6.0.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "RabbitMQ.Client": "6.2.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/EasyNetQ.dll": {
+            "assemblyVersion": "6.0.1.0",
+            "fileVersion": "6.0.1.0"
           }
         }
       },
@@ -634,6 +648,18 @@
           }
         }
       },
+      "RabbitMQ.Client/6.2.1": {
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Threading.Channels": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.1.0"
+          }
+        }
+      },
       "RequestResponseLoggingMiddleware/1.0.0": {
         "runtime": {
           "lib/netcoreapp3.1/RequestResponseLoggingMiddleware.dll": {
@@ -1040,6 +1066,7 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.Memory/4.5.4": {},
       "System.Net.Http/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1517,6 +1544,7 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Threading.Channels/4.7.1": {},
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1632,6 +1660,11 @@
           "Auto.Data.dll": {}
         }
       },
+      "Auto.Message/1.0.0": {
+        "runtime": {
+          "Auto.Message.dll": {}
+        }
+      },
       "System.Reactive.Reference/4.4.0.0": {
         "runtime": {
           "System.Reactive.dll": {
@@ -1654,6 +1687,13 @@
       "sha512": "sha512-zanbjWC0Y05gbx4eGXkzVycOQqVOFVeCjVsDSyuao9P4mtN1w3WxxTo193NGC7j3o2u3AJRswaoC6hEbnGACnQ==",
       "path": "castle.core/4.4.1",
       "hashPath": "castle.core.4.4.1.nupkg.sha512"
+    },
+    "EasyNetQ/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5Olo4tuwLXwi2459VuYYY8V+Mr74+zUhOkIcC6VaGZfpZp/qMqtxqccks7/JcziyRuOge6hwXH8PaHrfFM//CA==",
+      "path": "easynetq/6.0.1",
+      "hashPath": "easynetq.6.0.1.nupkg.sha512"
     },
     "GraphQL/4.6.1": {
       "type": "package",
@@ -2026,6 +2066,13 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
+    "RabbitMQ.Client/6.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kdcin0uz1b9xQPvlLOoa8Y2zQsfu7nRuTrcX02dCLVzwGVlsPp9AFgu1L3kRh4wSFEOGE03OVqpWKxaDlhuowQ==",
+      "path": "rabbitmq.client/6.2.1",
+      "hashPath": "rabbitmq.client.6.2.1.nupkg.sha512"
+    },
     "RequestResponseLoggingMiddleware/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2397,6 +2444,13 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
     "System.Net.Http/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2726,6 +2780,13 @@
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
     },
+    "System.Threading.Channels/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6akRtHK/wab3246t4p5v3HQrtQk8LboOt5T4dtpNgsp3zvDeM4/Gx8V12t0h+c/W9/enUrilk8n6EQqdQorZAA==",
+      "path": "system.threading.channels/4.7.1",
+      "hashPath": "system.threading.channels.4.7.1.nupkg.sha512"
+    },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2790,6 +2851,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Auto.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Auto.Message/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

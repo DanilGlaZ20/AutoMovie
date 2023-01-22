@@ -5,8 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Auto.Data;
 using Auto.Data.Entities;
+using Auto.Message;
 using Auto.Website.Controllers.Api;
 using Auto.Website.Models;
+using EasyNetQ;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Auto.Website.Controllers.Api
@@ -17,10 +19,12 @@ namespace Auto.Website.Controllers.Api
     public class OwnersController : ControllerBase
     {
         private readonly IAutoDatabase _context;
+        private readonly IBus _bus;
 
         public OwnersController(IAutoDatabase context)
         {
             _context = context;
+            _bus = _bus;
         }
 
         [HttpPost]
@@ -251,5 +255,18 @@ namespace Auto.Website.Controllers.Api
             if (index + count < total) links.next = new {href = $"{url}?index={index + count}&count={count}"};
             return links;
         }
+        private void PublishNewOwnerMessage(Owner owner)
+        {
+            var message = new NewOwnerMessage(owner.FirstName,  owner.LastName, owner.Age,
+                owner.Town, owner.Address,  owner.Vehicle.Registration);
+            _bus.PubSub.Publish(message);
+        }
+    
+        private void PublishNewVehicleOfOwnerMessage(string address, string newVehicle, string oldVehicle)
+        {
+            var message = new NewVehicleOfOwnerMessage(address, newVehicle, oldVehicle);
+            _bus.PubSub.Publish(message);
+        }
+        
     }
 }
