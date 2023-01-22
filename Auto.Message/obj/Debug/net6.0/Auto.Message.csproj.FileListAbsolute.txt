@@ -1,0 +1,12 @@
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\bin\Debug\net6.0\Auto.Message.deps.json
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\bin\Debug\net6.0\Auto.Message.dll
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\bin\Debug\net6.0\ref\Auto.Message.dll
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\bin\Debug\net6.0\Auto.Message.pdb
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\obj\Debug\net6.0\Auto.Message.csproj.AssemblyReference.cache
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\obj\Debug\net6.0\Auto.Message.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\obj\Debug\net6.0\Auto.Message.AssemblyInfoInputs.cache
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\obj\Debug\net6.0\Auto.Message.AssemblyInfo.cs
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\obj\Debug\net6.0\Auto.Message.csproj.CoreCompileInputs.cache
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\obj\Debug\net6.0\Auto.Message.dll
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\obj\Debug\net6.0\ref\Auto.Message.dll
+C:\Users\79777\RiderProjects\GitProjectC#\Auto\Auto.Message\obj\Debug\net6.0\Auto.Message.pdb
